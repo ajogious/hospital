@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/css/style.css">
+      <link rel="stylesheet" href="/css/all.min.css">
+      <link rel="stylesheet" href="/css/bootstrap.min.css">
+      <title>University Hospital / About</title>
+   </head>
+   <body>
+
+       <!-- navbar -->
+      <nav class="navbar navbar-expand-md navbar-light bg-dark fixed-top">
+         <div class="container-md">
+            <!-- Brand -->
+            <a class="navbar-brand border rounded p-2 shadow-lg text-light bg-danger fs-4 header-link-1" href="#">UH</a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+               <span class="fa fa-bars text-danger"></span>
+            </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+               <ul class="navbar-nav text-center ul">
+                  <li class="nav-item">
+                     <a class="nav-link text-light fw-bold" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-light fw-bold" href="#services">Services</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-light fw-bold" href="#facilities">Facilities</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-light fw-bold" href="#doctors">Doctors</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link text-light fw-bold" href="about.html">About</a>
+                  </li>
+                  <button type="button" class="btn btn-light d-block d-md-none btn1" data-bs-toggle="modal" data-bs-target="#myModal">
+                     Appointment
+                  </button>
+               </ul>
+            </div>
+
+            <!-- Button to Open the Modal -->
+            <button type="button" class="btn bg-danger text-light border-2 border-light fw-bold d-none d-md-block" data-bs-toggle="modal" data-bs-target="#myModal">
+               Appointment
+            </button>
+            
+            <!-- The Modal -->
+            <div class="modal fade" id="myModal">
+               <div class="modal-dialog modal-dialog-centered">
+               <div class="modal-content">
+            
+                  <!-- Modal Header -->
+                  <div class="modal-header">
+                     <h4 class="modal-title">Appointment Form</h4>
+                     <button type="button" class="close btn btn-danger" data-bs-dismiss="modal">&times;</button>
+                  </div>
+            
+                  <!-- Modal body -->
+                  <div class="modal-body">
+
+                     <form action="" class="needs-validation" novalidate>
+                        <div class="form-group">
+                        <label for="fullname"><h6>Fullname:</h6></label>
+                        <input type="text" class="form-control" id="fullname" placeholder="Enter fullname" name="fullname" required>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                        <div class="form-group">
+                        <label for="email"><h6>Email:</h6></label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter Email..." name="email" required>
+                        <div class="valid-feedback"></div>
+                        <div class="invalid-feedback">Please enter a valid email.</div>
+                        </div>
+                        <h6 class="pt-2">Gender:</h6>
+                        <div class="form-group form-check">
+                           <label class="form-check-label">
+                           <input class="form-check-input" type="radio" name="gender" required> Male
+                           <div class="valid-feedback"></div>
+                           </label>
+                           <br>
+                           <label class="form-check-label">
+                           <input class="form-check-input" type="radio" name="gender" required> Female
+                           <div class="valid-feedback"></div>
+                           <div class="invalid-feedback">Please pick your gender.</div>
+                           </label>
+                           <br>
+                        </div>
+                        <!-- validate the textarea -->
+                        <!-- <div class="form-group py-2">
+                           <label for="comment"><h6>Message:</h6></label>
+                              <textarea class="form-control" rows="5" id="comment">Summarize your problem. here..</textarea>
+                              <div class="valid-feedback"></div>
+                              <div class="invalid-feedback">Please pick your gender.</div>
+                        </div> -->
+                        <button type="submit" class="btn btn-dark mt-2 btn2">Book Appointment</button>
+                     </form>
+                  </div>
+               </div>
+               </div>
+            </div>
+         </div>
+      </nav>
+
+      <!-- about -->
+      <section class="about my-5 py-5">
+         <div class="container">
+            <h2 class="text-center display-4 fw-bold about-head">ABOUT US</h2>
+         </div>
+      </section>
+      <section class="about-text">
+         <div class="container-sm">
+            <div class="row justify-content-center">
+               <div class="col-md-8 pt-5">
+                  <p class="lead" id="fromLeft">
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aut a asperiores! Eaque commodi culpa corporis dolore atque magnam eligendi. Quis reprehenderit cupiditate, et debitis amet illo mollitia accusantium ducimus doloremque earum tempore voluptatem, dolore optio libero odio deserunt natus repellendus quod similique ipsa! Ad dolor odio architecto ipsa veniam fuga commodi magni quas beatae, ratione assumenda enim asperiores, dolorem deleniti labore eligendi voluptas aut quisquam! 
+                  </p>
+                  <p class="lead">
+                     Cum quae sunt labore tempore molestiae illo mollitia iste voluptatibus illum deleniti inventore eaque neque, at officia ullam perspiciatis ab tenetur suscipit cupiditate quaerat dolore provident recusandae! Soluta, autem? Obcaecati minus nostrum tenetur necessitatibus.
+                  </p>
+                  <p class="lead" id="fromRight">
+                     Ad dolor odio architecto ipsa veniam fuga commodi magni quas beatae, ratione assumenda enim asperiores, dolorem deleniti labore eligendi voluptas aut quisquam! Cum quae sunt labore tempore molestiae illo mollitia iste voluptatibus illum deleniti inventore eaque neque, at officia ullam perspiciatis ab tenetur suscipit cupiditate quaerat dolore provident recusandae! Soluta, autem? Obcaecati minus nostrum tenetur necessitatibus.
+                  </p>
+               </div>
+            </div>
+         </section>
+      </div>
+
+      <!-- footer -->
+
+      <footer class="bg-dark mt-5 pt-5">
+         <div class="container-md">
+            <div class="row justify-content-center g-3">
+               <div class="col-sm-5 text-sm-start text-center">
+                  <a href="#"><span class="fab fa-facebook text-light fa-3x p-2"></span></a>
+                  <a href="#"><span class="fab fa-twitter text-light fa-3x p-2"></span></a>
+                  <a href="#"><span class="fab fa-instagram text-light fa-3x p-2"></span></a>
+               </div>
+               <div class="col-sm-5 text-light text-sm-start text-center">
+                  <h5>Other means:</h5>
+                  <p>Our other means of communication are</p>
+                  <p><a href="#" class="text-info">example@yahoo.com</a></p>
+                  <p><a href="#" class="text-info">example@gmail.com</a></p>
+               </div>
+            </div>
+            <a href="https://www/github.com/ajogious" class="fst-italic fw-bold text-light text-end">
+               <p>Design By AjTech Institute</p>
+            </a>
+         </div>
+      </footer>
+
+      <!-- js -->
+
+      <script src="/js/main.js"></script>
+      <script src="/js/all.min.js"></script>
+      <script src="/js/bootstrap.min.js"></script>
+   </body>
+</html>
